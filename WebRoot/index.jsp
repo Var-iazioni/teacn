@@ -16,6 +16,7 @@
 <meta name="author" content="" />
 
 <jsp:include page="importcss.jsp"></jsp:include>
+<jsp:include page="importjs.jsp"></jsp:include>
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -318,6 +319,6 @@
 
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-	<jsp:include page="importjs.jsp"></jsp:include>
+
 </body>
 </html>
