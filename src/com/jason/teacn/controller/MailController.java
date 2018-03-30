@@ -25,7 +25,6 @@ public class MailController {
 	 */
 	@RequestMapping("/email")
 	public void sendMail() {
-		String emailMsg = "测试发送邮件";
 		try {
 			MailUtil.sendMail("Variazioni@foxmail.com", "邮件发送测试", "<a href='www.baidu.com' >百度一下</a>");
 		} catch (AddressException e) {
