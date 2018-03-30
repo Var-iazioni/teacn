@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jason.teacn.dao.LogsMapper" >
+  <resultMap id="BaseResultMap" type="com.jason.teacn.bean.Logs" >
+    <id column="LogId" property="logid" jdbcType="INTEGER" />
+    <result column="UserCode" property="usercode" jdbcType="VARCHAR" />
+    <result column="UserIP" property="userip" jdbcType="VARCHAR" />
+    <result column="CreateTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="Reverse1" property="reverse1" jdbcType="VARCHAR" />
+    <result column="Reverse2" property="reverse2" jdbcType="VARCHAR" />
+    <result column="Reverse3" property="reverse3" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    LogId, UserCode, UserIP, CreateTime, Reverse1, Reverse2, Reverse3
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jason.teacn.bean.LogsExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from Logs
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from Logs
+    where LogId = #{logid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from Logs
+    where LogId = #{logid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jason.teacn.bean.LogsExample" >
+    delete from Logs
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jason.teacn.bean.Logs" >
+    insert into Logs (LogId, UserCode, UserIP, 
+      CreateTime, Reverse1, Reverse2, 
+      Reverse3)
+    values (#{logid,jdbcType=INTEGER}, #{usercode,jdbcType=VARCHAR}, #{userip,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{reverse1,jdbcType=VARCHAR}, #{reverse2,jdbcType=VARCHAR}, 
+      #{reverse3,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.jason.teacn.bean.Logs" >
+    insert into Logs
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="logid != null" >
+        LogId,
+      </if>
+      <if test="usercode != null" >
+        UserCode,
+      </if>
+      <if test="userip != null" >
+        UserIP,
+      </if>
+      <if test="createtime != null" >
+        CreateTime,
+      </if>
+      <if test="reverse1 != null" >
+        Reverse1,
+      </if>
+      <if test="reverse2 != null" >
+        Reverse2,
+      </if>
+      <if test="reverse3 != null" >
+        Reverse3,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="logid != null" >
+        #{logid,jdbcType=INTEGER},
+      </if>
+      <if test="usercode != null" >
+        #{usercode,jdbcType=VARCHAR},
+      </if>
+      <if test="userip != null" >
+        #{userip,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="reverse1 != null" >
+        #{reverse1,jdbcType=VARCHAR},
+      </if>
+      <if test="reverse2 != null" >
+        #{reverse2,jdbcType=VARCHAR},
+      </if>
+      <if test="reverse3 != null" >
+        #{reverse3,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jason.teacn.bean.LogsExample" resultType="java.lang.Integer" >
+    select count(*) from Logs
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update Logs
+    <set >
+      <if test="record.logid != null" >
+        LogId = #{record.logid,jdbcType=INTEGER},
+      </if>
+      <if test="record.usercode != null" >
+        UserCode = #{record.usercode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userip != null" >
+        UserIP = #{record.userip,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createtime != null" >
+        CreateTime = #{record.createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.reverse1 != null" >
+        Reverse1 = #{record.reverse1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.reverse2 != null" >
+        Reverse2 = #{record.reverse2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.reverse3 != null" >
+        Reverse3 = #{record.reverse3,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update Logs
+    set LogId = #{record.logid,jdbcType=INTEGER},
+      UserCode = #{record.usercode,jdbcType=VARCHAR},
+      UserIP = #{record.userip,jdbcType=VARCHAR},
+      CreateTime = #{record.createtime,jdbcType=TIMESTAMP},
+      Reverse1 = #{record.reverse1,jdbcType=VARCHAR},
+      Reverse2 = #{record.reverse2,jdbcType=VARCHAR},
+      Reverse3 = #{record.reverse3,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jason.teacn.bean.Logs" >
+    update Logs
+    <set >
+      <if test="usercode != null" >
+        UserCode = #{usercode,jdbcType=VARCHAR},
+      </if>
+      <if test="userip != null" >
+        UserIP = #{userip,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="reverse1 != null" >
+        Reverse1 = #{reverse1,jdbcType=VARCHAR},
+      </if>
+      <if test="reverse2 != null" >
+        Reverse2 = #{reverse2,jdbcType=VARCHAR},
+      </if>
+      <if test="reverse3 != null" >
+        Reverse3 = #{reverse3,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where LogId = #{logid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jason.teacn.bean.Logs" >
+    update Logs
+    set UserCode = #{usercode,jdbcType=VARCHAR},
+      UserIP = #{userip,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      Reverse1 = #{reverse1,jdbcType=VARCHAR},
+      Reverse2 = #{reverse2,jdbcType=VARCHAR},
+      Reverse3 = #{reverse3,jdbcType=VARCHAR}
+    where LogId = #{logid,jdbcType=INTEGER}
+  </update>
+</mapper>
