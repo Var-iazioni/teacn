@@ -1,10 +1,9 @@
 package com.jason.teacn.dao;
 
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
-
 import com.jason.teacn.bean.Logs;
 import com.jason.teacn.bean.LogsExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface LogsMapper {
     int countByExample(LogsExample example);

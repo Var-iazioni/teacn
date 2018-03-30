@@ -5,9 +5,9 @@ import java.util.Date;
 public class Logs {
     private Integer logid;
 
-    private String usercode;
-
     private String userip;
+
+    private String requesturl;
 
     private Date createtime;
 
@@ -25,20 +25,20 @@ public class Logs {
         this.logid = logid;
     }
 
-    public String getUsercode() {
-        return usercode;
-    }
-
-    public void setUsercode(String usercode) {
-        this.usercode = usercode == null ? null : usercode.trim();
-    }
-
     public String getUserip() {
         return userip;
     }
 
     public void setUserip(String userip) {
         this.userip = userip == null ? null : userip.trim();
+    }
+
+    public String getRequesturl() {
+        return requesturl;
+    }
+
+    public void setRequesturl(String requesturl) {
+        this.requesturl = requesturl == null ? null : requesturl.trim();
     }
 
     public Date getCreatetime() {

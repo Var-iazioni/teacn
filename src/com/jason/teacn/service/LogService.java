@@ -10,15 +10,15 @@ import com.jason.teacn.dao.LogsMapper;
 
 @Service
 public class LogService {
+	
 	@Autowired
 	private LogsMapper logsMapper;
 
-	public void addLogs(String ip, String reverse) {
+	public void saveLogs(String ip, String requesturl) {
 		Logs logs = new Logs();
-		logs.setUsercode("Tourist");
+		logs.setRequesturl(requesturl);
 		logs.setUserip(ip);
 		logs.setCreatetime(new Date());
-		logs.setReverse1(reverse);
 		logsMapper.insert(logs);
 	}
 }

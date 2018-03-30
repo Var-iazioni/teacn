@@ -165,76 +165,6 @@ public class LogsExample {
             return (Criteria) this;
         }
 
-        public Criteria andUsercodeIsNull() {
-            addCriterion("UserCode is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeIsNotNull() {
-            addCriterion("UserCode is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeEqualTo(String value) {
-            addCriterion("UserCode =", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeNotEqualTo(String value) {
-            addCriterion("UserCode <>", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeGreaterThan(String value) {
-            addCriterion("UserCode >", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeGreaterThanOrEqualTo(String value) {
-            addCriterion("UserCode >=", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeLessThan(String value) {
-            addCriterion("UserCode <", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeLessThanOrEqualTo(String value) {
-            addCriterion("UserCode <=", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeLike(String value) {
-            addCriterion("UserCode like", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeNotLike(String value) {
-            addCriterion("UserCode not like", value, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeIn(List<String> values) {
-            addCriterion("UserCode in", values, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeNotIn(List<String> values) {
-            addCriterion("UserCode not in", values, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeBetween(String value1, String value2) {
-            addCriterion("UserCode between", value1, value2, "usercode");
-            return (Criteria) this;
-        }
-
-        public Criteria andUsercodeNotBetween(String value1, String value2) {
-            addCriterion("UserCode not between", value1, value2, "usercode");
-            return (Criteria) this;
-        }
-
         public Criteria andUseripIsNull() {
             addCriterion("UserIP is null");
             return (Criteria) this;
@@ -302,6 +232,76 @@ public class LogsExample {
 
         public Criteria andUseripNotBetween(String value1, String value2) {
             addCriterion("UserIP not between", value1, value2, "userip");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlIsNull() {
+            addCriterion("RequestURL is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlIsNotNull() {
+            addCriterion("RequestURL is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlEqualTo(String value) {
+            addCriterion("RequestURL =", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlNotEqualTo(String value) {
+            addCriterion("RequestURL <>", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlGreaterThan(String value) {
+            addCriterion("RequestURL >", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlGreaterThanOrEqualTo(String value) {
+            addCriterion("RequestURL >=", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlLessThan(String value) {
+            addCriterion("RequestURL <", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlLessThanOrEqualTo(String value) {
+            addCriterion("RequestURL <=", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlLike(String value) {
+            addCriterion("RequestURL like", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlNotLike(String value) {
+            addCriterion("RequestURL not like", value, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlIn(List<String> values) {
+            addCriterion("RequestURL in", values, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlNotIn(List<String> values) {
+            addCriterion("RequestURL not in", values, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlBetween(String value1, String value2) {
+            addCriterion("RequestURL between", value1, value2, "requesturl");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequesturlNotBetween(String value1, String value2) {
+            addCriterion("RequestURL not between", value1, value2, "requesturl");
             return (Criteria) this;
         }
 
