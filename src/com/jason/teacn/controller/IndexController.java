@@ -1,5 +1,9 @@
 package com.jason.teacn.controller;
 
+import java.io.UnsupportedEncodingException;
+import java.util.Date;
+
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.jason.teacn.service.LogService;
+import com.jason.teacn.util.MailUtil;
 
 @Controller
 public class IndexController {
@@ -19,6 +24,16 @@ public class IndexController {
 	public ModelAndView index(HttpServletRequest request) {
 
 		logService.saveLogs(request.getRemoteAddr(), request.getRequestURL().toString());
+
+		try {
+			MailUtil.sendMail("Variazioni@foxmail.com", "主页访问通知", new Date().toLocaleString());
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		ModelAndView mv = new ModelAndView("index.jsp");
 		mv.addObject("active", "1");
