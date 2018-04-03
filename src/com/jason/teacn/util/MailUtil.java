@@ -1,14 +1,23 @@
 package com.jason.teacn.util;
 
-import java.io.UnsupportedEncodingException;
+import java.security.GeneralSecurityException;
+import java.util.Date;
 import java.util.Properties;
 
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.Message.RecipientType;
 import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import org.springframework.mail.javamail.JavaMailSenderImpl;
-import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
+
+import com.sun.mail.util.MailSSLSocketFactory;
 
 /**
  * Created by cuizhixiang on 2017/5/31.
@@ -16,56 +25,121 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class MailUtil {
-	private static final String HOST = MailConfig.host;
-	private static final Integer PORT = MailConfig.port;
-	private static final String USERNAME = MailConfig.userName;
-	private static final String PASSWORD = MailConfig.passWord;
-	private static final String emailForm = MailConfig.emailForm;
-	private static final String timeout = MailConfig.timeout;
-	private static final String personal = MailConfig.personal;
-	private static JavaMailSenderImpl mailSender = createMailSender();
 
-	/**
-	 * 邮件发送器
-	 *
-	 * @return 配置好的工具
-	 */
-	private static JavaMailSenderImpl createMailSender() {
-		JavaMailSenderImpl sender = new JavaMailSenderImpl();
+	// gmail邮箱SSL方式
+	private static void gmailssl(Properties props) {
 		final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
-		sender.setHost(HOST);
-		sender.setPort(PORT);
-		sender.setUsername(USERNAME);
-		sender.setPassword(PASSWORD);
-		sender.setDefaultEncoding("Utf-8");
-		Properties p = new Properties();
-		p.setProperty("mail.smtp.timeout", timeout);
-		p.setProperty("mail.smtp.auth", "true");
-		// p.setProperty("mail.smtp.localhost", "mail.digu.com");
-		p.setProperty("mail.debug", "true");
-		p.setProperty("mail.smtp.socketFactory.class", SSL_FACTORY);
-		p.setProperty("mail.smtp.ssl.enable", "true");
-		sender.setJavaMailProperties(p);
-		return sender;
+		props.put("mail.debug", "true");
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.ssl.enable", "true");
+		props.put("mail.smtp.socketFactory.class", SSL_FACTORY);
+		props.put("mail.smtp.port", "465");
+		props.put("mail.smtp.socketFactory.port", "465");
+		// props.put("mail.smtp.socketFactory.fallback", "false");
+		props.put("mail.smtp.auth", "true");
 	}
 
-	/**
-	 * 发送邮件
-	 *
-	 * @param to 接受人
-	 * @param subject 主题
-	 * @param html 发送内容
-	 * @throws MessagingException 异常
-	 * @throws UnsupportedEncodingException 异常
-	 */
-	public static void sendMail(String to, String subject, String html) throws MessagingException, UnsupportedEncodingException {
-		MimeMessage mimeMessage = mailSender.createMimeMessage();
-		// 设置utf-8或GBK编码，否则邮件会有乱码
-		MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
-		messageHelper.setFrom(emailForm, personal);
-		messageHelper.setTo(to);
-		messageHelper.setSubject(subject);
-		messageHelper.setText(html, true);
-		mailSender.send(mimeMessage);
+	// gmail邮箱的TLS方式
+	private static void gmailtls(Properties props) {
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.smtp.starttls.enable", "true");
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.port", "587");
+	}
+
+	/*
+	* 通过gmail邮箱发送邮件
+	*/
+	public static void gmailSender() {
+
+		// Get a Properties object
+		Properties props = new Properties();
+		// 选择ssl方式
+		gmailssl(props);
+
+		final String username = "Variazioni.Jason@gmail.com";
+		final String password = "hpDESKJET3325";
+		Session session = Session.getDefaultInstance(props, new Authenticator() {
+			protected PasswordAuthentication getPasswordAuthentication() {
+				return new PasswordAuthentication(username, password);
+			}
+		});
+
+		// -- Create a new message --
+		Message msg = new MimeMessage(session);
+
+		// -- Set the FROM and TO fields --
+		try {
+			msg.setFrom(new InternetAddress(username));
+			msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Variazioni@126.com"));
+			msg.setSubject("Hello");
+			msg.setText("How are you");
+			msg.setSentDate(new Date());
+			Transport.send(msg);
+		} catch (AddressException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("Message sent.");
+	}
+
+	/*
+	* 通过qq邮箱发送邮件,qq邮箱需要在设置里开启POP3/SMTP的授权，通过用户名+授权码方式才能发邮件
+	*/
+	public static void qqSender() {
+		MailSSLSocketFactory msf = null;
+		try {
+			msf = new MailSSLSocketFactory();
+			msf.setTrustAllHosts(true);
+		} catch (GeneralSecurityException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		Properties props = new Properties();
+		// 开启调试
+		props.setProperty("mail.debug", "true");
+		// 是否需要验证
+		props.setProperty("mail.smtp.auth", "true");
+		// 发送邮件服务器
+		props.setProperty("mail.smtp.host", "smtp.qq.com");
+		// 发送邮件协议名称
+		props.setProperty("mail.transport.protocol", "smtp");
+		props.put("mail.smtp.ssl.enable", "true");
+		props.put("mail.smtp.ssl.socketFactory", msf);
+
+		// 使用匿名内部类，用邮箱进行验证
+		Session session = Session.getInstance(props, new Authenticator() {
+
+			@Override
+			protected PasswordAuthentication getPasswordAuthentication() {
+				// 通过用户名和密码进行验证
+				return new PasswordAuthentication("from@qq.com", "qq邮箱生成的授权码authcode");
+			}
+
+		});
+		Message message = new MimeMessage(session);
+		try {
+			// 设置邮件发送方
+			message.setFrom(new InternetAddress("from@qq.com"));
+			// 设置邮件标题
+			message.setSubject("测试");
+			// 设置邮件内容
+			message.setContent("测试", "text/html;charset=utf-8");
+			// 设置邮件接收方
+			message.addRecipient(RecipientType.TO, new InternetAddress("to@gmail.com"));
+
+			// 发送邮件
+			Transport.send(message);
+
+		} catch (AddressException e) {
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			e.printStackTrace();
+		}
 	}
 }

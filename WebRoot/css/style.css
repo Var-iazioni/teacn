@@ -1206,13 +1206,13 @@ footer .widget .social-network {
 }
 
 .team-member h4 {
-/* 	text-align: center; */
+	/* 	text-align: center; */
 	margin-bottom: 5px;
 	color: #777;
 }
 
 .team-member h5 {
-/* 	text-align: center; */
+	/* 	text-align: center; */
 	margin-bottom: 5px;
 	color: #777;
 }
@@ -1427,7 +1427,7 @@ ul.team-detail li ul.social-network li i {
 	display: block;
 	overflow: hidden;
 	padding: 11px 0 5px;
-	border-top: 2px solid #BBBBBB;
+	/* 	border-top: 2px solid #BBBBBB; */
 	border-bottom: 2px dotted #CDCDCD;
 }
 

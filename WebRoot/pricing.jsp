@@ -50,113 +50,87 @@
 		</section>
 		<section id="content">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="about-logo">
-							<h3>Voluptatem Accusantium Doloremque</h3>
-							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-								voluptatem quia voluptas</p>
-							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-								voluptatem quia voluptas</p>
-						</div>
-					</div>
-				</div>
+				<!-- 				<div class="row"> -->
+				<!-- 					<div class="col-md-12"> -->
+				<!-- 						<div class="about-logo"> -->
+				<!-- 							<h3>Voluptatem Accusantium Doloremque</h3> -->
+				<!-- 							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam -->
+				<!-- 								voluptatem quia voluptas</p> -->
+				<!-- 							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam -->
+				<!-- 								voluptatem quia voluptas</p> -->
+				<!-- 						</div> -->
+				<!-- 					</div> -->
+				<!-- 				</div> -->
 				<!-- end divider -->
 				<div class="row">
 					<div class="col-lg-12"></div>
-					<div class="col-lg-3">
-						<div class="pricing-box-item">
-							<div class="pricing-heading">
-								<h3>
-									<strong>Basic</strong>
-								</h3>
-							</div>
-							<div class="pricing-terms">
-								<h6>&#36;15.00 / Year</h6>
-							</div>
-							<div class="pricing-container">
-								<ul>
-									<li><i class="icon-ok"></i> Responsive Design</li>
-									<li><i class="icon-ok"></i> Bootstrap Design</li>
-									<li><i class="icon-ok"></i> Unlimited Support</li>
-									<li><i class="icon-ok"></i> Free Trial version</li>
-									<li><i class="icon-ok"></i> HTML5 CSS3 jQuery</li>
-								</ul>
-							</div>
-							<div class="pricing-action">
-								<a href="#" class="btn btn-medium"><i class="icon-bolt"></i> Get Now</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="pricing-box-item">
-							<div class="pricing-heading">
-								<h3>
-									<strong>Standard</strong>
-								</h3>
-							</div>
-							<div class="pricing-terms">
-								<h6>&#36;20.00 / Year</h6>
-							</div>
-							<div class="pricing-container">
-								<ul>
-									<li><i class="icon-ok"></i> Responsive Design</li>
-									<li><i class="icon-ok"></i> Bootstrap Design</li>
-									<li><i class="icon-ok"></i> Unlimited Support</li>
-									<li><i class="icon-ok"></i> Free Trial version</li>
-									<li><i class="icon-ok"></i> HTML5 CSS3 jQuery</li>
-								</ul>
-							</div>
-							<div class="pricing-action">
-								<a href="#" class="btn btn-medium"><i class="icon-bolt"></i> Get Now</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-6">
 						<div class="pricing-box-item activeItem">
 							<div class="pricing-heading">
 								<h3>
-									<strong>Advanced</strong>
+									<strong>화상/음성 수강(skype,위쳇,카톡,QQ)</strong>
 								</h3>
 							</div>
 							<div class="pricing-terms">
-								<h6>&#36;15.00 / Year</h6>
+								<h6>15분 과정-주3회(월12회)&nbsp;&nbsp;&nbsp;70,000&nbsp;&nbsp;55,000</h6>
 							</div>
-							<div class="pricing-container">
-								<ul>
-									<li><i class="icon-ok"></i> Responsive Design</li>
-									<li><i class="icon-ok"></i> Bootstrap Design</li>
-									<li><i class="icon-ok"></i> Unlimited Support</li>
-									<li><i class="icon-ok"></i> Free Trial version</li>
-									<li><i class="icon-ok"></i> HTML5 CSS3 jQuery</li>
-								</ul>
+							<div class="pricing-terms">
+								<h6>30분 과정-주3회(월12회)&nbsp;&nbsp;&nbsp;120,000&nbsp;&nbsp;96,000</h6>
 							</div>
+							<div class="pricing-terms">
+								<h6>60분 과정-주3회(월12회)&nbsp;&nbsp;&nbsp;210,000&nbsp;&nbsp;168,000</h6>
+							</div>
+							<div class="pricing-terms">
+								<h6>15분 과정-주5회(월20회)&nbsp;&nbsp;&nbsp;100,000&nbsp;&nbsp;80,000</h6>
+							</div>
+							<div class="pricing-terms">
+								<h6>30분 과정-주5회(월20회)&nbsp;&nbsp;&nbsp;200,000&nbsp;&nbsp;150,000</h6>
+							</div>
+							<div class="pricing-terms">
+								<h6>60분 과정-주5회(월20회)&nbsp;&nbsp;&nbsp;350,000&nbsp;&nbsp;270,000</h6>
+							</div>
+							<!-- 							<div class="pricing-container"> -->
+							<!-- 								<ul> -->
+							<!-- 									<li><i class="icon-ok"></i>15분 과정-주3회(월12회)        70,000  55,000</li> -->
+							<!-- 								</ul> -->
+							<!-- 							</div> -->
 							<div class="pricing-action">
-								<a href="#" class="btn btn-medium"><i class="icon-bolt"></i> Get Now</a>
+								<a href="#" class="btn btn-medium"><i class="icon-bolt"></i>바로 수강신청</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3">
-						<div class="pricing-box-item">
+					<div class="col-lg-6">
+						<div class="pricing-box-item activeItem">
 							<div class="pricing-heading">
 								<h3>
-									<strong>Mighty</strong>
+									<strong>전화 수강</strong>
 								</h3>
 							</div>
 							<div class="pricing-terms">
-								<h6>&#36;15.00 / Year</h6>
+								<h6>15분 과정-주3회(월12회)&nbsp;&nbsp;&nbsp;100,000&nbsp;&nbsp;85,000</h6>
 							</div>
-							<div class="pricing-container">
-								<ul>
-									<li><i class="icon-ok"></i> Responsive Design</li>
-									<li><i class="icon-ok"></i> Bootstrap Design</li>
-									<li><i class="icon-ok"></i> Unlimited Support</li>
-									<li><i class="icon-ok"></i> Free Trial version</li>
-									<li><i class="icon-ok"></i> HTML5 CSS3 jQuery</li>
-								</ul>
+							<div class="pricing-terms">
+								<h6>30분 과정-주3회(월12회)&nbsp;&nbsp;&nbsp;150,000&nbsp;&nbsp;126,000</h6>
 							</div>
+							<div class="pricing-terms">
+								<h6>60분 과정-주3회(월12회)&nbsp;&nbsp;&nbsp;240,000&nbsp;&nbsp;198,000</h6>
+							</div>
+							<div class="pricing-terms">
+								<h6>15분 과정-주5회(월20회)&nbsp;&nbsp;&nbsp;130,000&nbsp;&nbsp;110,000</h6>
+							</div>
+							<div class="pricing-terms">
+								<h6>30분 과정-주5회(월20회)&nbsp;&nbsp;&nbsp;230,000&nbsp;&nbsp;180,000</h6>
+							</div>
+							<div class="pricing-terms">
+								<h6>60분 과정-주5회(월20회)&nbsp;&nbsp;&nbsp;380,000&nbsp;&nbsp;300,000</h6>
+							</div>
+							<!-- 							<div class="pricing-container"> -->
+							<!-- 								<ul> -->
+							<!-- 									<li><i class="icon-ok"></i>15분 과정-주3회(월12회)        70,000  55,000</li> -->
+							<!-- 								</ul> -->
+							<!-- 							</div> -->
 							<div class="pricing-action">
-								<a href="#" class="btn btn-medium"><i class="icon-bolt"></i> Get Now</a>
+								<a href="#" class="btn btn-medium"><i class="icon-bolt"></i>바로 수강신청</a>
 							</div>
 						</div>
 					</div>
@@ -166,6 +140,6 @@
 		<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-	
+
 </body>
 </html>
