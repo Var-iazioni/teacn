@@ -29,12 +29,12 @@
 					<li <c:if test="${'5' == active}"> class="active" </c:if>><a href="teachers.html"><spring:message code="navi.teachers" /></a></li>
 					<li <c:if test="${'6' == active}"> class="active" </c:if>><a href="leveltest.html"><spring:message code="navi.leveltest" /></a></li>
 					<li <c:if test="${'7' == active}"> class="active" </c:if>><a href="courseapplication.html"><spring:message code="navi.courseapplication" /></a></li>
-					<li class="dropdown  <c:if test="${'9' == active || '10' == active || '11' == active}"> active </c:if>"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><spring:message code="navi.customerservice" /><b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li <c:if test="${'9' == active}"> class="active" </c:if>><a href="#"><spring:message code="navi.notice" /></a></li>
-							<li <c:if test="${'10' == active}"> class="active" </c:if>><a href="courseevaluate.html"><spring:message code="navi.courseevaluate" /></a></li>
-							<li <c:if test="${'11' == active}"> class="active" </c:if>><a href="#"><spring:message code="navi.QA" /></a></li>
-						</ul></li>
+					<%-- 					<li class="dropdown  <c:if test="${'9' == active || '10' == active || '11' == active}"> active </c:if>"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><spring:message code="navi.customerservice" /><b class="caret"></b></a> --%>
+					<!-- 						<ul class="dropdown-menu"> -->
+					<%-- 							<li <c:if test="${'9' == active}"> class="active" </c:if>><a href="#"><spring:message code="navi.notice" /></a></li> --%>
+					<%-- 							<li <c:if test="${'10' == active}"> class="active" </c:if>><a href="courseevaluate.html"><spring:message code="navi.courseevaluate" /></a></li> --%>
+					<%-- 							<li <c:if test="${'11' == active}"> class="active" </c:if>><a href="#"><spring:message code="navi.QA" /></a></li> --%>
+					<!-- 						</ul></li> -->
 				</ul>
 			</div>
 		</div>

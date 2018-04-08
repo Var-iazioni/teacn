@@ -102,7 +102,7 @@
 				<div class="row">
 					<div class="skill-home">
 						<div class="skill-home-solid clearfix">
-							<div class="col-md-3 text-center">
+							<div class="col-md-4 text-center">
 								<span class="icons c1"><i class="fa fa-book"></i></span>
 								<div class="box-area">
 									<h3>
@@ -113,7 +113,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-md-3 text-center">
+							<div class="col-md-4 text-center">
 								<span class="icons c2"><i class="fa fa-users"></i></span>
 								<div class="box-area">
 									<h3>
@@ -124,7 +124,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-md-3 text-center">
+							<div class="col-md-4 text-center">
 								<span class="icons c3"><i class="fa fa-trophy"></i></span>
 								<div class="box-area">
 									<h3>
@@ -135,13 +135,13 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-md-3 text-center">
-								<span class="icons c4"><i class="fa fa-globe"></i></span>
-								<div class="box-area">
-									<h3>Business Management</h3>
-									<p>Lorem ipsum dolor sitamet, consec tetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident</p>
-								</div>
-							</div>
+							<!-- 							<div class="col-md-3 text-center"> -->
+							<!-- 								<span class="icons c4"><i class="fa fa-globe"></i></span> -->
+							<!-- 								<div class="box-area"> -->
+							<!-- 									<h3>Business Management</h3> -->
+							<!-- 									<p>Lorem ipsum dolor sitamet, consec tetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident</p> -->
+							<!-- 								</div> -->
+							<!-- 							</div> -->
 						</div>
 					</div>
 				</div>
