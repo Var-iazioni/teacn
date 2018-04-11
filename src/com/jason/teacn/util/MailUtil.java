@@ -57,8 +57,8 @@ public class MailUtil {
 		// 选择ssl方式
 		gmailssl(props);
 
-		final String username = "Variazioni.Jason@gmail.com";
-		final String password = "hpDESKJET3325";
+		final String username = "cupchinese@gmail.com";
+		final String password = "cupchinese.123";
 		Session session = Session.getDefaultInstance(props, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(username, password);
