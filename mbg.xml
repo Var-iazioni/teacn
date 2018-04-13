@@ -11,7 +11,7 @@
 
 
 		<!-- 配置数据库连接信息 -->
-		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://104.238.141.178:3306/teacn?characterEncoding=UTF-8&amp;useSSL=false&amp;autoReconnect=true" userId="root" password="rubbishcar">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://qdm176766670.my3w.com:3306/qdm176766670_db?characterEncoding=UTF-8&amp;useSSL=false&amp;autoReconnect=true" userId="qdm176766670" password="rubbishcar">
 		</jdbcConnection>
 
 		<javaTypeResolver>
