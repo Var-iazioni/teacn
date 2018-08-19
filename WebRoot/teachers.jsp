@@ -49,6 +49,13 @@
 						<h2 class="pageTitle">讲师录</h2>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<p style="color: #FFF;">我们是中韩名门大学出身的最优秀的新一代中国人！ 我们将用我们的热情使您开口讲中文！ 请相信我们！</p>
+						<p style="color: #FFF;">저희는 중국/한국 명문대 출신 중국 원어민입니다 열정으로 '말할 수 있는 중국어'를 가르치겠습니다 믿어주십시오</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- 		<section id="content"> -->
@@ -205,8 +212,7 @@
 							<!-- Team Member -->
 							<div class="team-member">
 								<!-- Image -->
-								<img class="img-responsive" height="394" width="264" src="img/teachers/maxinyueimg.png" class="btn btn-default" data-trigger="hover" title="Ma 쌤" data-container="body" data-toggle="popover" data-placement="right"
-									data-content="안녕하세요~저는 마쌤입니다~한국어를 좋아해서 한국에 온 저는 한국에 있는 동안 중-한/한-중 통번역 많이 해 봤고 열정적으로 중국어 수업을 하고 있습니다. 중국에 관심 있으시 분이랑 같이 즐거운 추억을 만들고 싶습니다.">
+								<img class="img-responsive" height="394" width="264" src="img/teachers/maxinyueimg.png" class="btn btn-default" data-trigger="hover" title="Ma 쌤" data-container="body" data-toggle="popover" data-placement="right" data-content="안녕하세요~저는 마쌤입니다~한국어를 좋아해서 한국에 온 저는 한국에 있는 동안 중-한/한-중 통번역 많이 해 봤고 열정적으로 중국어 수업을 하고 있습니다. 중국에 관심 있으시 분이랑 같이 즐거운 추억을 만들고 싶습니다.">
 
 							</div>
 						</div>
@@ -228,8 +234,7 @@
 							<!-- Team Member -->
 							<div class="team-member">
 								<!-- Image -->
-								<img class="img-responsive" height="394" width="264" src="img/teachers/xiangxunaimg.png" class="btn btn-default" data-trigger="hover" title="Sang 쌤" data-container="body" data-toggle="popover" data-placement="right"
-									data-content="안녕하세요!저는 상 쌤입니다. 저는 한국에서 중국어를 가르친지 2 년 정도 됐으며 현재 싱가폴에서 화상중국어를 해 드리고 있습니다. 한국에 있으때 많은 한국친구들과 함께 생활하고 또 많은 학생들에게 중국어를 가르치면서 중국어와 한국어는 사고방식과 말하는 방법 자체가 다르다는 것을 알게 됐습니다. 중국어를 어렵게 생각하시고 저와 함께 즐겁게 한국어를 공부해 보세요^^">
+								<img class="img-responsive" height="394" width="264" src="img/teachers/xiangxunaimg.png" class="btn btn-default" data-trigger="hover" title="Sang 쌤" data-container="body" data-toggle="popover" data-placement="right" data-content="안녕하세요!저는 상 쌤입니다. 저는 한국에서 중국어를 가르친지 2 년 정도 됐으며 현재 싱가폴에서 화상중국어를 해 드리고 있습니다. 한국에 있으때 많은 한국친구들과 함께 생활하고 또 많은 학생들에게 중국어를 가르치면서 중국어와 한국어는 사고방식과 말하는 방법 자체가 다르다는 것을 알게 됐습니다. 중국어를 어렵게 생각하시고 저와 함께 즐겁게 한국어를 공부해 보세요^^">
 							</div>
 						</div>
 						<div class="col-md-3" style="padding-left: 25px; padding-right: 25px;">
@@ -251,8 +256,7 @@
 							<!-- Team Member -->
 							<div class="team-member">
 								<!-- Image -->
-								<img class="img-responsive" height="394" width="264" src="img/teachers/liuxiaomanimg.png" class="btn btn-default" data-trigger="hover" title="Liu 쌤" data-container="body" data-toggle="popover" data-placement="right"
-									data-content="안녕하세요~저는 한국 온지 4년 됐어요. 아시아의 문화에 대해 관심이 많아서 지금 서울대 비교문학학과 석사 수료중입니다. 한국의 문학을 공부하면서 중국의 문학도 많이 알려 드라고 싶습니다!감사합니다!">
+								<img class="img-responsive" height="394" width="264" src="img/teachers/liuxiaomanimg.png" class="btn btn-default" data-trigger="hover" title="Liu 쌤" data-container="body" data-toggle="popover" data-placement="right" data-content="안녕하세요~저는 한국 온지 4년 됐어요. 아시아의 문화에 대해 관심이 많아서 지금 서울대 비교문학학과 석사 수료중입니다. 한국의 문학을 공부하면서 중국의 문학도 많이 알려 드라고 싶습니다!감사합니다!">
 							</div>
 						</div>
 						<div class="col-md-3" style="padding-left: 25px; padding-right: 25px;">
@@ -273,8 +277,7 @@
 							<!-- Team Member -->
 							<div class="team-member">
 								<!-- Image -->
-								<img class="img-responsive" height="394" width="264" src="img/teachers/xuwenyaimg.png" class="btn btn-default" data-trigger="hover" title="허쌤" data-container="body" data-toggle="popover" data-placement="right"
-									data-content="안녕하세요~저는 허쌤이에요~ 저는 중국의 명문대 난통대학 대외한어교육(중국어 교육)학과에서 졸업했습니다. 제 전공 때문에 대학 때부터 여러 중국어 교육 활동을 했기 때문에 중국어 교육 경력과 전문 지식이 아주 많습니다. 제가 졸업한 다음에 계속 중국어 교육을 하고 있습니다. 앞으로 이 영역의 전문가를 되고 싶습니다.">
+								<img class="img-responsive" height="394" width="264" src="img/teachers/xuwenyaimg.png" class="btn btn-default" data-trigger="hover" title="허쌤" data-container="body" data-toggle="popover" data-placement="right" data-content="안녕하세요~저는 허쌤이에요~ 저는 중국의 명문대 난통대학 대외한어교육(중국어 교육)학과에서 졸업했습니다. 제 전공 때문에 대학 때부터 여러 중국어 교육 활동을 했기 때문에 중국어 교육 경력과 전문 지식이 아주 많습니다. 제가 졸업한 다음에 계속 중국어 교육을 하고 있습니다. 앞으로 이 영역의 전문가를 되고 싶습니다.">
 							</div>
 						</div>
 						<div class="col-md-3" style="padding-left: 25px; padding-right: 25px;">
@@ -297,8 +300,7 @@
 							<!-- Team Member -->
 							<div class="team-member">
 								<!-- Image -->
-								<img class="img-responsive" height="394" width="264" src="img/teachers/wangyanxinimg.png" class="btn btn-default" data-trigger="hover" title="왕 쌤" data-container="body" data-toggle="popover" data-placement="right"
-									data-content="안녕하세요!중국에서 온 왕쌤입니다~저는 수업하는 것을 아주 좋아해서 교사 중국에서 교사 자격증을 땄고 한국 와서 중국어 강사 되었습니다. 저는 끊이 없이 더 열심히 하여 더 홀륭한 중국어 강사를 되겠습니다.">
+								<img class="img-responsive" height="394" width="264" src="img/teachers/wangyanxinimg.png" class="btn btn-default" data-trigger="hover" title="왕 쌤" data-container="body" data-toggle="popover" data-placement="right" data-content="안녕하세요!중국에서 온 왕쌤입니다~저는 수업하는 것을 아주 좋아해서 교사 중국에서 교사 자격증을 땄고 한국 와서 중국어 강사 되었습니다. 저는 끊이 없이 더 열심히 하여 더 홀륭한 중국어 강사를 되겠습니다.">
 							</div>
 						</div>
 						<div class="col-md-3" style="padding-left: 25px; padding-right: 25px;">

@@ -53,18 +53,18 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="about-logo">
-							<h3>Voluptatem Accusantium Doloremque</h3>
-							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-								voluptatem quia voluptas</p>
-							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-								voluptatem quia voluptas</p>
+							<p>初级会话: 为零基础的中文爱好者准备的基础入门课程，课程内容以中文入门，拼音，发音及简单的日常用语为主。</p>
+							<p>一般会话：为有一定中文基础的中文爱好者准备的中级中文课程。课程内容以发音纠正与强化，日常用语，基础对话为主。</p>
+							<p>高级会话：为中文水平较高的中文爱好者准备的课程。课程以对话为主，纠正发音及语法，学习高级词汇及句型。</p>
+							<p>商务会话：本课程以中韩商业贸易用语为主，强化发音，语法等会话技巧。</p>
+							<p>free talking：适用于可以看懂这句中文的中文爱好者，通过限定主题的自由对话快速提高中文水平的实用型课程。</p>
+							<p>考试专项：为应对HSK,CPT,TSC等中文考试，专项制定的课程</p>
+							<p>汉字里的中文：通过学习汉字来学习中文，在学习中文的同时掌握中国常用3200字。</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor.</p>
-
 						<!-- Form itself -->
 						<form name="sentMessage" id="contactForm" novalidate>
 							<h3>课程申请页面</h3>
@@ -82,8 +82,7 @@
 
 							<div class="control-group">
 								<div class="controls">
-									<textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999"
-										style="resize: none"></textarea>
+									<textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize: none"></textarea>
 								</div>
 							</div>
 							<div id="success"></div>
