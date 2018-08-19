@@ -53,13 +53,13 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="about-logo">
-							<p>初级会话: 为零基础的中文爱好者准备的基础入门课程，课程内容以中文入门，拼音，发音及简单的日常用语为主。</p>
-							<p>一般会话：为有一定中文基础的中文爱好者准备的中级中文课程。课程内容以发音纠正与强化，日常用语，基础对话为主。</p>
-							<p>高级会话：为中文水平较高的中文爱好者准备的课程。课程以对话为主，纠正发音及语法，学习高级词汇及句型。</p>
-							<p>商务会话：本课程以中韩商业贸易用语为主，强化发音，语法等会话技巧。</p>
-							<p>free talking：适用于可以看懂这句中文的中文爱好者，通过限定主题的自由对话快速提高中文水平的实用型课程。</p>
-							<p>考试专项：为应对HSK,CPT,TSC等中文考试，专项制定的课程</p>
-							<p>汉字里的中文：通过学习汉字来学习中文，在学习中文的同时掌握中国常用3200字。</p>
+							<p><spring:message code="ca.describe1" /></p>
+							<p><spring:message code="ca.describe2" /></p>
+							<p><spring:message code="ca.describe3" /></p>
+							<p><spring:message code="ca.describe4" /></p>
+							<p><spring:message code="ca.describe5" /></p>
+							<p><spring:message code="ca.describe6" /></p>
+							<p><spring:message code="ca.describe7" /></p>
 						</div>
 					</div>
 				</div>
@@ -106,6 +106,5 @@
 		<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-
 </body>
 </html>
