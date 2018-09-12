@@ -96,7 +96,6 @@ public class MailUtil {
 			msf = new MailSSLSocketFactory();
 			msf.setTrustAllHosts(true);
 		} catch (GeneralSecurityException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 

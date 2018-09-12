@@ -105,7 +105,7 @@ public class IndexController {
 	* @throws
 	*/
 	@RequestMapping(value = "/leveltest/apply.html", produces = "text/html;charset=UTF-8")
-	public @ResponseBody String levelTestApply(HttpServletRequest request, String sName, String gender, String birthday, String phoneNumber, String email, String testDate, String testType, String courseType, String courseLength, String courseTime, String chLevelSpeak, String chLevelListen, String chLevelWirte, String chExperience, String chPurpose, String teacherRequirement, String otherRequirement) {
+	public @ResponseBody String levelTestApply(HttpServletRequest request, String sName, String gender, String birthday, String phoneNumber, String email, String testDate, String testType1, String testType2, String courseType, String courseLength1, String courseLength2, String courseTime, String chLevelSpeak, String chLevelListen, String chLevelWirte, String chExperience, String chPurpose, String teacherRequirement, String otherRequirement) {
 		logService.saveLogs(request.getRemoteAddr(), request.getRequestURL().toString());
 		String result = "";
 		result += "姓名：" + sName + "<br>";
@@ -114,9 +114,9 @@ public class IndexController {
 		result += "联系电话：" + phoneNumber + "<br>";
 		result += "邮箱：" + email + "<br>";
 		result += "希望等级测试时间：" + testDate + "<br>";
-		result += "希望测试方式：" + testType + "<br>";
+		result += "希望测试方式：" + testType1 + " " + testType2 + "<br>";
 		result += "希望课程类型：" + courseType + "<br>";
-		result += "希望课程时长：" + courseLength + "<br>";
+		result += "希望课程时长：" + courseLength1 + " " + courseLength2 + "<br>";
 		result += "希望课程时间：" + courseTime + "<br>";
 		result += "中文水平口语水平：" + chLevelSpeak + "<br>";
 		result += "中文水平听力水平：" + chLevelListen + "<br>";

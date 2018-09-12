@@ -4,7 +4,8 @@
 <%@ taglib prefix="mvc" uri="http://www.springframework.org/tags/form"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 	pageContext.setAttribute("APP_PATH", request.getContextPath());
 %>
 <!DOCTYPE html>
@@ -65,16 +66,17 @@
 								<label class="control-label">性别：</label> <select class="form-control">
 									<option>男</option>
 									<option>女</option>
+									<option>保密</option>
 								</select>
 								<p class="help-block"></p>
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label">DateTime Picking</label>
-							<div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-								<input class="form-control" size="16" type="text" value="" readonly> <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+							<label class="control-label">出生日期：</label>
+							<div class="input-group date datetime_brithday" data-date-format="yyyy MM dd" data-link-field="birthday">
+								<input class="form-control" size="30" type="text" value="" readonly> <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
 							</div>
-							<input type="hidden" id="dtp_input1" value="" /><br />
+							<input type="hidden" id="birthday" value="" /><br />
 						</div>
 						<div class="control-group">
 							<div class="controls">
@@ -90,17 +92,25 @@
 								<p class="help-block"></p>
 							</div>
 						</div>
+
 						<div class="control-group">
-							<div class="controls">
-								<p>希望等级测试时间：</p>
-								<input type="text" class="form-control" id="testDate" />
-								<p class="help-block"></p>
+							<label class="control-label">希望等级测试时间：</label>
+							<div class="input-group date datetime_testDate" data-date-format="yyyy MM dd - HH:ii p" data-link-field="testDate">
+								<input class="form-control" size="30" type="text" value="" readonly> <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
 							</div>
+							<input type="hidden" id="testDate" value="" /><br />
 						</div>
+
+
 						<div class="control-group">
 							<div class="controls">
 								<p>希望测试方法：</p>
-								<input type="text" class="form-control" id="testType" />
+								<input type="text" class="form-control" id="testType1" /> <label class="control-label">性别：</label> <select class="form-control">
+									<option>男</option>
+									<option>女</option>
+									<option>保密</option>
+								</select>
+
 								<p class="help-block"></p>
 							</div>
 						</div>
@@ -195,5 +205,32 @@
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
+	<script type="text/javascript">
+		$('.datetime_brithday').datetimepicker({
+			language : 'zh-CN',
+			weekStart : 1,
+			// 			todayBtn : 1,
+			autoclose : 1,
+			todayHighlight : 1,
+			startView : 4,
+			minView : 2,
+			forceParse : 0,
+			showMeridian : 1,
+			endDate : new Date()
+		});
+		$('.datetime_testDate').datetimepicker({
+			language : 'zh-CN',
+			weekStart : 1,
+			todayBtn : 1,
+			autoclose : 1,
+			todayHighlight : 1,
+			startView : 3,
+			minView : 0,
+			forceParse : 0,
+			showMeridian : 1,
+			startDate : new Date()
+		});
+	</script>
 </body>
+
 </html>

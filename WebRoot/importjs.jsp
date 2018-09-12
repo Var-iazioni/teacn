@@ -26,3 +26,4 @@
 <%-- <script src="${APP_PATH}/js/owl-carousel/owl.carousel.js"></script> --%>
 <script src="${APP_PATH}/js/bootstrap-datetimepicker.min.js"></script>
 <script src="${APP_PATH}/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="${APP_PATH}/js/locales/bootstrap-datetimepicker.ko.js"></script>
