@@ -128,10 +128,10 @@
 								<span class="icons c3"><i class="fa fa-trophy"></i></span>
 								<div class="box-area">
 									<h3>
-										<a href="#"><spring:message code="index.courseapplication" /></a>
+										<a href="#"><spring:message code="index.courseapply" /></a>
 									</h3>
 									<p>
-										<spring:message code="index.courseapplication.info" />
+										<spring:message code="index.courseapply.info" />
 									</p>
 								</div>
 							</div>

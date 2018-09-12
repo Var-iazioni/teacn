@@ -50,15 +50,17 @@ public class MailUtil {
 	/*
 	* 通过gmail邮箱发送邮件
 	*/
-	public static void gmailSender() {
+	public static void gmailSender(String message) {
 
 		// Get a Properties object
 		Properties props = new Properties();
 		// 选择ssl方式
 		gmailssl(props);
 
-		final String username = "cupchinese@gmail.com";
-		final String password = "cupchinese.123";
+		// final String username = "cupchinese@gmail.com";
+		// final String password = "cupchinese.123";
+		final String username = "Variazioni.Jason@gmail.com";
+		final String password = "hpDESKJET3325";
 		Session session = Session.getDefaultInstance(props, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(username, password);
@@ -72,15 +74,13 @@ public class MailUtil {
 		try {
 			msg.setFrom(new InternetAddress(username));
 			msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Variazioni@126.com"));
-			msg.setSubject("Hello");
-			msg.setText("How are you");
+			msg.setSubject("Teacn Message");
+			msg.setText(message);
 			msg.setSentDate(new Date());
 			Transport.send(msg);
 		} catch (AddressException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (MessagingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

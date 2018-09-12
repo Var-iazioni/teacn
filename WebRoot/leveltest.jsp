@@ -42,7 +42,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h2 class="pageTitle">等级测试申请</h2>
+						<h2 class="pageTitle">
+							<spring:message code="test.title" />
+						</h2>
 					</div>
 				</div>
 			</div>
@@ -51,46 +53,131 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="about-logo">
-							<h3>Voluptatem Accusantium Doloremque</h3>
-							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-								voluptatem quia voluptas</p>
-							<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-								voluptatem quia voluptas</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
 					<div class="col-md-6">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor.</p>
+						<div class="control-group">
+							<div class="controls">
+								<label class="control-label">姓名：</label> <input type="text" class="form-control" id="sName" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<label class="control-label">性别：</label> <select class="form-control">
+									<option>男</option>
+									<option>女</option>
+								</select>
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">DateTime Picking</label>
+							<div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+								<input class="form-control" size="16" type="text" value="" readonly> <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+							</div>
+							<input type="hidden" id="dtp_input1" value="" /><br />
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>联系电话：</p>
+								<input type="text" class="form-control" id="phoneNumber" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>邮箱：</p>
+								<input type="text" class="form-control" id="email" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>希望等级测试时间：</p>
+								<input type="text" class="form-control" id="testDate" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>希望测试方法：</p>
+								<input type="text" class="form-control" id="testType" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>希望课程类型：</p>
+								<input type="text" class="form-control" id="courseType" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>希望课程时长：</p>
+								<input type="text" class="form-control" id="courseLength" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>希望课程时间：</p>
+								<input type="text" class="form-control" id="courseTime" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>中文口语水平：</p>
+								<input type="text" class="form-control" id="chLevelSpeak" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>中文听力水平：</p>
+								<input type="text" class="form-control" id="chLevelListen" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>中文写作水平：</p>
+								<input type="text" class="form-control" id="chLevelWirte" />
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>中文学习经历：</p>
+								<textarea rows="10" cols="100" class="form-control" id="chExperience" maxlength="999" style="resize: none"></textarea>
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>学习中文目的：</p>
+								<textarea rows="10" cols="100" class="form-control" id="chPurpose" maxlength="999" style="resize: none"></textarea>
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>对老师的要求：</p>
+								<textarea rows="10" cols="100" class="form-control" id="teacherRequirement" maxlength="999" style="resize: none"></textarea>
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>其他要求：</p>
+								<textarea rows="10" cols="100" class="form-control" id="otherRequirement" maxlength="999" style="resize: none"></textarea>
+								<p class="help-block"></p>
+							</div>
+						</div>
 
-						<!-- Form itself -->
-						<form name="sentMessage" id="contactForm" novalidate>
-							<h3>等级测试申请页面</h3>
-							<div class="control-group">
-								<div class="controls">
-									<input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
-									<p class="help-block"></p>
-								</div>
-							</div>
-							<div class="control-group">
-								<div class="controls">
-									<input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
-								</div>
-							</div>
-
-							<div class="control-group">
-								<div class="controls">
-									<textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999"
-										style="resize: none"></textarea>
-								</div>
-							</div>
-							<div id="success"></div>
-							<!-- For success/fail messages -->
-							<button type="submit" class="btn btn-primary pull-right">Send</button>
-							<br />
-						</form>
+						<div id="success"></div>
+						<button type="submit" class="btn btn-primary pull-right">Send</button>
+						<br />
 					</div>
 					<div class="col-md-6">
 
@@ -107,6 +194,6 @@
 		<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-	
+
 </body>
 </html>

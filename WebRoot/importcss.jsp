@@ -10,7 +10,8 @@
 <!-- css -->
 <link href="${APP_PATH}/css/bootstrap.min.css" rel="stylesheet" />
 <link href="${APP_PATH}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="${APP_PATH}/css/jcarousel.css" rel="stylesheet" />
+<%-- <link href="${APP_PATH}/css/jcarousel.css" rel="stylesheet" /> --%>
 <link href="${APP_PATH}/css/flexslider.css" rel="stylesheet" />
-<link href="${APP_PATH}/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<%-- <link href="${APP_PATH}/js/owl-carousel/owl.carousel.css" rel="stylesheet"> --%>
 <link href="${APP_PATH}/css/style.css" rel="stylesheet" />
+<link href="${APP_PATH}/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />

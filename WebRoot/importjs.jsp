@@ -10,9 +10,9 @@
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="${APP_PATH}/js/jquery.js"></script>
+<script src="${APP_PATH}/js/jquery-1.8.3.min.js"></script>
 <script src="${APP_PATH}/js/jquery.easing.1.3.js"></script>
-<script src="${APP_PATH}/js/bootstrap.min.js"></script>
+<script src="${APP_PATH}/js/bootstrap.js"></script>
 <script src="${APP_PATH}/js/jquery.fancybox.pack.js"></script>
 <script src="${APP_PATH}/js/jquery.fancybox-media.js"></script>
 <script src="${APP_PATH}/js/jquery.flexslider.js"></script>
@@ -23,4 +23,6 @@
 <script src="${APP_PATH}/js/jquery.magnific-popup.min.js"></script>
 <script src="${APP_PATH}/js/animate.js"></script>
 <script src="${APP_PATH}/js/custom.js"></script>
-<script src="${APP_PATH}/js/owl-carousel/owl.carousel.js"></script>
+<%-- <script src="${APP_PATH}/js/owl-carousel/owl.carousel.js"></script> --%>
+<script src="${APP_PATH}/js/bootstrap-datetimepicker.min.js"></script>
+<script src="${APP_PATH}/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
